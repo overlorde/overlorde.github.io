@@ -1,18 +1,108 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - CS PhD Student</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Your Name</h1>
+            <div class="space-x-4">
+                <a href="#about" class="hover:text-gray-300">About</a>
+                <a href="#research" class="hover:text-gray-300">Research</a>
+                <a href="#publications" class="hover:text-gray-300">Publications</a>
+                <a href="#contact" class="hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-16 text-center">
+        <img src="/api/placeholder/200/200" alt="Your Photo" class="rounded-full mx-auto mb-8 shadow-lg">
+        <h1 class="text-4xl font-bold mb-4">Your Name</h1>
+        <p class="text-xl text-gray-600 mb-8">PhD Student in Computer Science</p>
+        <p class="text-gray-600">University Name</p>
+    </header>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+        <div class="max-w-2xl mx-auto">
+            <p class="text-gray-700 mb-4">
+                I am a first-year PhD student in Computer Science at [University Name], working under the supervision of [Advisor Name]. My research interests include [Research Area 1], [Research Area 2], and [Research Area 3].
+            </p>
+            <p class="text-gray-700">
+                Prior to starting my PhD, I completed my [Previous Degree] at [Previous University]. During my studies, I focused on [Previous Research/Work Experience].
+            </p>
+        </div>
+    </section>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <!-- Research Section -->
+    <section id="research" class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Research</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Current Research Project</h3>
+                    <p class="text-gray-700">
+                        Description of your current research project, its goals, and potential impact.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Research Interests</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Research Area 1</li>
+                        <li>Research Area 2</li>
+                        <li>Research Area 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <!-- Publications Section -->
+    <section id="publications" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center">Publications</h2>
+        <div class="max-w-4xl mx-auto space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="font-bold mb-2">Publication Title 1</h3>
+                <p class="text-gray-600 mb-2">Authors: Your Name, Co-author 1, Co-author 2</p>
+                <p class="text-gray-600 mb-2">Conference/Journal Name, Year</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-blue-600 hover:text-blue-800">PDF</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Code</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">Demo</a>
+                </div>
+            </div>
+            <!-- Add more publications as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact</h2>
+            <div class="max-w-md mx-auto">
+                <p class="mb-4">Email: your.email@university.edu</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="hover:text-gray-300">GitHub</a>
+                    <a href="#" class="hover:text-gray-300">LinkedIn</a>
+                    <a href="#" class="hover:text-gray-300">Twitter</a>
+                    <a href="#" class="hover:text-gray-300">Google Scholar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Your Name. Last updated March 2025.</p>
+        </div>
+    </footer>
+</body>
+</html>
